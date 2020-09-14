@@ -3135,7 +3135,7 @@ movzx	ax,byte ptr [bp+4h]
             AssertCode32("endbr64", "F3 0F 1E FA");
         }
 
-        [Test]
+        [Test(Description = "Tests customizing operator separator.")]
         public void X86Dis_OperandRendering()
         {
             var options = new MachineInstructionWriterOptions(
